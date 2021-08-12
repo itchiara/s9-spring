@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Prenotazioni</title>
+</head>
+<body>
+
+ 	<span th:each="prenotazione: ${prenotazioni}"><br/>
+
+          <p><font style color="red"><b>Id: </b></font> <span th:text="${prenotazione.id}"></span></p>
+         <p><font style color="red"><b>Utente: </b></font> <span th:text="${prenotazione.utente.username}"></span></p>
+         <p><font style color="red"><b>Data: </b></font> <span th:text="${prenotazione.dataPrenotazione}"></span></p>
+         <p><font style color="red"><b>Postazione: </b></font> <span th:text="${prenotazione.postazione.id}"></span></p>
+    </span>
+</body>
+</html>
