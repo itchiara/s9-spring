@@ -6,7 +6,7 @@ import it.epicode.be.model.Edificio;
 import it.epicode.be.model.Postazione;
 import it.epicode.be.model.Prenotazione;
 import it.epicode.be.model.Tipo;
-import it.epicode.be.model.Utente;
+import it.epicode.be.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -40,7 +40,7 @@ public class PrenotazioneDto {
 		p.setId(id);
 		p.setDataPrenotazione(dataPrenotazione);
 		
-		Utente u = new Utente();
+		User u = new User();
 		u.setId(idUtente);
 		u.setUsername(usernameUtente);
 		p.setUtente(u);

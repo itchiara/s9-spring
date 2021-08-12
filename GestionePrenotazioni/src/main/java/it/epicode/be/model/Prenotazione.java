@@ -21,13 +21,13 @@ public class Prenotazione {
 	private Long id;
 	
 	@ManyToOne
-	private Utente utente;
+	private User utente;
 	
 	private LocalDate dataPrenotazione;
 	private LocalDate dataUtilizzo;
 	
 	@ManyToOne //(fetch = FetchType.EAGER) // le relazioni verso One sono di default Eager(vengono lette da database in ogni caso)
-	//,viceversa il default è Lazy(vengono lette solo se richiesto)
+										//,viceversa il default è Lazy(vengono lette solo se richiesto)
 	//@JoinColumn(name="postazione_id")  //nome di default della colonna foreign key
 	private Postazione postazione;
 	
